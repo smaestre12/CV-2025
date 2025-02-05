@@ -1,0 +1,273 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #232526, #414345);
+    color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 25px;
+    text-align: center;
+    border-bottom: 3px solid #ff9800;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ff9800;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+.nombre {
+    margin: 0;
+}
+
+.nombre1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Secciones */
+.container-fluid {
+    background: #ffffff1a;
+    padding: 25px;
+    margin: 15px auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+h1,
+h3 {
+    color: #ff9800;
+    text-align: center;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    opacity: 0.9;
+}
+
+/* Botones */
+button {
+    background: #ff9800;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e68a00;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    border-top: 3px solid #ff9800;
+}
+
+.fa-whatsapp {
+    font-size: 3.5em;
+    color: #25D366;
+    position: fixed;
+    bottom: 150px;
+    right: 10px;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 20px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+    text-align: center;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.addFooter {
+    font-style: normal;
+    /* Evita la cursiva predeterminada */
+    text-align: center;
+    margin-top: 10px;
+}
+
+.addFooter h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.addFooter p {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.carousel-inner {
+    max-height: 500px;
+    /* Establece un máximo de altura */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    /* Asegura que la imagen se ajuste sin recortarse */
+}
+
+.videos {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    /* Espacio entre los videos */
+}
+
+video {
+    width: 45%;
+    /* Ajusta el ancho para que quepan en pantalla */
+    max-width: 500px;
+    /* Tamaño máximo */
+    height: auto;
+    /* Mantiene la proporción */
+    border-radius: 10px;
+    /* Bordes redondeados opcionales */
+}
+.contenedor-imagenes {
+    display: flex;
+    justify-content: space-around; /* Centra las imágenes */
+    gap: 10px; /* Espacio entre imágenes */
+    
+}
+
+.contenedor-imagenes img {
+    width: 45%;
+    max-width: 500px; /* Ajusta el ancho de cada imagen */
+    height: auto; /* Mantiene la proporción */
+    min-width: 150px; /* Evita que sean demasiado pequeñas en móviles */
+    border-radius: 10px;
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .container-fluid {
+        padding: 10px;
+        margin: 5px auto;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        text-decoration: underline;
+    }
+
+    .h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .nombre {
+        margin: 0;
+        text-decoration: none;
+    }
+
+    .nombre1 {
+        margin: 0;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+
+    .addFooter p {
+        font-size: 0.9rem;
+        line-height: 1;
+        font-style: italic;
+    }
+
+    .carousel-item img {
+        max-width: 80%;
+        max-height: 60vh;
+        /* No excede el 60% de la altura de la pantalla */
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .videos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .videos video {
+        max-width: 100%;
+        height: auto;
+        width: 30vw; /* Ajusta el ancho según necesites */
+        min-width: 350px; /* Evita que se hagan demasiado pequeños en móviles */
+    }
+    .contenedor-imagenes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .contenedor-imagenes img {
+        max-width: 100%;
+        height: auto;
+        width: 30vw; /* Ajusta el ancho según necesites */
+        min-width: 350px; /* Evita que se hagan demasiado pequeños en móviles */
+    }
+    
+
+}
